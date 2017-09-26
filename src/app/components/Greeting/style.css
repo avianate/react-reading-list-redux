@@ -1,0 +1,17 @@
+@import "variables.css";
+
+.greeting {
+    background: #eaeaea;
+    padding: 0.5rem 1rem;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.3);
+    display: flex;
+    justify-content: space-between;
+
+    & h2 {
+        margin: 0;
+    }
+
+    &.closed {
+        display: none;
+    }
+}
