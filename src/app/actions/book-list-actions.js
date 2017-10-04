@@ -3,23 +3,25 @@ import BookSearchService from "../services/bookSearchService";
 
 export const addBook = (book) => ({
     type: ADD_BOOK,
-    book
+    payload: book
 });
 
 export const deleteBook = (bookId) => ({
     type: REMOVE_BOOK,
-    bookId
+    payload: bookId
 });
 
 export const toggleRead = (bookId) => ({
     type: TOGGLE_READ,
-    bookId
+    payload: bookId
 });
 
 export const rate = (bookId, rating) => ({
     type: RATE_BOOK,
-    bookId,
-    rating
+    payload: {
+        bookId,
+        rating
+    }
 });
 
 export const searchForBook = (titleOrISBN) => (dispatch) => (

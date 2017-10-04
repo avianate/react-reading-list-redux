@@ -1,0 +1,14 @@
+.iconsContainer {
+    position: relative;
+    top: -30px;
+}
+
+.icons {
+    cursor: pointer;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.children {
+    padding-top: 10px;
+}

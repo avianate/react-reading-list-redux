@@ -8,7 +8,7 @@ export default ({homelink, children, nav}) => (
 
     <div className={styles.app}>
 
-        <SiteHeader className={styles.header} links={nav} homelink={homelink} />
+        {/* <SiteHeader className={styles.header} links={nav} homelink={homelink} /> */}
 
         <div className={styles.wrapper}>
             <main className={styles.main}>{children}</main>

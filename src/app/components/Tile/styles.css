@@ -1,0 +1,60 @@
+.grid {
+    background-color: #fdfdfd;
+    font-family: sans-serif;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 3px hsla(0, 0%, 0%, 0.15);
+    padding: 10px;
+    margin-bottom: 20px;
+
+    transition: background-color 0.3s ease-in-out;
+}
+
+.grid:hover {
+    background-color: hsla(0, 100%, 90%, 0.07);
+    outline: 2px solid purple;
+}
+
+.content {
+    padding: 10px;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    border: 2px solid #efefef;
+    max-height: 440px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.section {
+    overflow: scroll;
+    tansition: all 0.3s ease-in-out;
+}
+
+.image {
+    grid-column: 1 / span 1;
+    width: 100%;
+    max-height: 400px;
+}
+
+.title {
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.meta {
+    color: red;
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    color: #777;
+    font-weight: 100;
+}
+
+.read {
+    opacity: 0.65;
+}

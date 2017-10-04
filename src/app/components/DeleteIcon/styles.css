@@ -1,0 +1,10 @@
+.delete {
+    padding: 5px;
+    position: relative;
+    top: -1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.delete:hover {
+    fill: #ffcc00;
+}

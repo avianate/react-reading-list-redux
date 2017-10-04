@@ -9,9 +9,19 @@ import system, * as fromSystem from './reducers/system';
 import nav, * as fromSiteNav from './reducers/site-nav';
 import pageMeta, * as fromPageMeta from './reducers/page-meta';
 import greeting from "./reducers/greeting-reducer.js";
+import bookList from "./reducers/reading-list-reducers";
+
+const preloadedState = {
+  bookList: {
+      myBooks: [],
+      books: {},
+      read: [],
+      ratings: {}
+  }
+}
 
 // create the master reducer
-const rootReducer = combineReducers({nav, system, routing, pageMeta, greeting});
+const rootReducer = combineReducers({nav, system, routing, pageMeta, greeting, bookList}, preloadedState);
 
 
 // Reexport scoped selectors here:

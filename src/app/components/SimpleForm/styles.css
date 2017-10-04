@@ -1,0 +1,41 @@
+
+.container {
+    background: indigo;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.title {
+    color: #fff;
+    text-align: right;
+    padding-top: 5px;
+}
+
+.input {
+    padding: 5px;
+    border-radius: 2px;
+    border: none;
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: indigo;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #5bc0de;
+    max-width: 150px;
+    color: white;
+    max-width: 120px;
+    outline: none;
+    border: none;
+    font-size: 0.8rem;
+}
+
+.button:hover {
+    background-color: #31b0d5;
+}
+
+.button:focus {
+    border: 2px solid lightblue;
+}
