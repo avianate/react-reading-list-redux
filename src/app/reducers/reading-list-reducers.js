@@ -5,21 +5,6 @@ export const ADD_BOOK = "ADD_BOOK",
 
 import {imgSrc, title, meta, body} from "../MockData";
 
-/*
-    bookList: {
-        myBooks: [01234, 43210],
-        books: {
-            987654321: {...}
-            1234567890: {...}
-        },
-        read: [43210],
-        rating: {
-            987654321: 5,
-            1234567890: 3
-        }
-    }
-*/
-
 const initialState = {
     myBooks: ["0760348596"],
     books: {
@@ -36,13 +21,6 @@ const initialState = {
         "0760348596": 4
     }
 };
-
-// const initialState = {
-//     myBooks: [],
-//     books: {},
-//     read: [],
-//     ratings: {}
-// }
 
 export default function(state=initialState, action) {
     const payload = action.payload;
