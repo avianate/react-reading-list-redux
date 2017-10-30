@@ -1,9 +1,19 @@
+//region Exports
+
 export const ADD_BOOK = "ADD_BOOK",
              REMOVE_BOOK = "REMOVE_BOOK", 
              TOGGLE_READ = "TOGGLE_READ", 
              RATE_BOOK = "RATE_BOOK";
 
+//endregion
+
+//region Imports
+
 import {imgSrc, title, meta, body} from "../MockData";
+
+//endregion
+
+//region Initial state
 
 const initialState = {
     myBooks: ["0760348596"],
@@ -22,6 +32,9 @@ const initialState = {
     }
 };
 
+//endregion
+
+//region Reducers
 export default function(state=initialState, action) {
     const payload = action.payload;
 
@@ -57,6 +70,9 @@ export default function(state=initialState, action) {
     }
 }
 
+//endregion
+
+//region Selectors
 export const selectUserBookData = (bookList) => {
     const { myBooks, books, read, ratings } = bookList;
 
@@ -75,3 +91,5 @@ export const selectUserBookData = (bookList) => {
 
     return data;
 }
+
+//endregion

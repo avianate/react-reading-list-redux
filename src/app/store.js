@@ -23,6 +23,7 @@ const preloadedState = {
 // create the master reducer
 const rootReducer = combineReducers({nav, system, routing, pageMeta, greeting, bookList}, preloadedState);
 
+//region Selectors
 
 // Reexport scoped selectors here:
 export const selectSiteNav = (state) => (
@@ -53,13 +54,18 @@ export const selectMetaTags = (state) => (
   fromPageMeta.selectMetaTags(state.pageMeta)
 );
 
+//endregion
 
+//region Initial state
 
 // determine initial state
 const initialState = isBrowser
   ? window.__INITIAL_STATE__ || {}
   : {};
 
+//endregion
+
+//region Middleware
 
 const reduxMiddleware = compose(
     applyMiddleware(thunk),
@@ -67,6 +73,8 @@ const reduxMiddleware = compose(
       ? window.devToolsExtension()
       : f => f
 );
+
+//endregion
 
 // export a store creator factory with initial state if present...
 export default () => createStore( rootReducer, initialState, reduxMiddleware );
